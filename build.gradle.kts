@@ -23,6 +23,13 @@ allprojects {
         buildUponDefaultConfig = true
         config.setFrom(files("$rootDir/gradle/detekt.yml"))
     }
+    
+    // Ensure all projects use the same JVM toolchain
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+        kotlinOptions {
+            jvmTarget = "17"
+        }
+    }
 }
 
 buildscript {
