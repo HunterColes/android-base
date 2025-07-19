@@ -12,7 +12,7 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "eu.krzdabrowski.starter.core"
+    namespace = "com.huntercoles.fatline.core"
 
     with (defaultConfig) {
         minSdk = 26

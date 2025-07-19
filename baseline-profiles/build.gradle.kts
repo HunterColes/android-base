@@ -10,7 +10,7 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "eu.krzdabrowski.starter.baselineprofiles"
+    namespace = "com.huntercoles.fatline.baselineprofiles"
 
     with (defaultConfig) {
         minSdk = 28

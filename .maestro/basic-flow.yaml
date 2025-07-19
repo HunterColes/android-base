@@ -1,4 +1,4 @@
-appId: eu.krzdabrowski.starter
+appId: com.huntercoles.fatline
 ---
 - launchApp
 - assertNotVisible: "Sorry, something went wrong when fetching rockets"

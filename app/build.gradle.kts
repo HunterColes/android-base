@@ -11,10 +11,10 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "eu.krzdabrowski.starter"
+    namespace = "com.huntercoles.fatline"
 
     defaultConfig {
-        applicationId = "eu.krzdabrowski.starter"
+        applicationId = "com.huntercoles.fatline"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

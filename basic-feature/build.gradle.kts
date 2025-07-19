@@ -12,7 +12,7 @@ plugins {
 
 android {
     compileSdk = 34
-    namespace = "eu.krzdabrowski.starter.basicfeature"
+    namespace = "com.huntercoles.fatline.basicfeature"
 
     with (defaultConfig) {
         minSdk = 26
@@ -20,7 +20,7 @@ android {
     }
 
     defaultConfig {
-        testInstrumentationRunner = "eu.krzdabrowski.starter.core.utils.HiltTestRunner"
+        testInstrumentationRunner = "com.huntercoles.fatline.core.utils.HiltTestRunner"
     }
 
     buildFeatures {
