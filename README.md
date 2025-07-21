@@ -1,28 +1,25 @@
-# **Android Kotlin starter project - 2022 edition**
+# **FatLine - FOSS Stock Portfolio App**
 
-[![Android Weekly #532 badge](https://androidweekly.net/issues/issue-532/badge)](https://androidweekly.net/issues/issue-532)
-
-[![Jetc.dev #147 badge](https://img.shields.io/badge/Featured%20in%20jetc.dev-Issue%20%23147-blue)](https://jetc.dev/issues/147.html)
-
-Android starter project, described precisely in [this](https://proandroiddev.com/clean-android-multi-module-offline-first-scalable-app-in-2022-including-jetpack-compose-mvi-987ebecbecae) and [this article](https://medium.com/codequest/clean-android-multi-module-offline-first-scalable-app-in-2022-part-2-including-compose-ui-e1fd0a0f410e).
-
-The codebase is still up-to-date in 2023 and 2024 with periodically updates.
+A free and open-source stock portfolio application built with modern Android development practices.
 
 ### **Purpose**
-To show good practices using Kotlin features and latest Android libraries from Jetpack in 2022.
-
-For comparison, 2019 edition code available [here](https://github.com/krzdabrowski/android-starter-2019).
+To provide users with a simple, free, and privacy-focused way to track their virtual stock investments without ads or data collection.
 
 ### **Description**
-Application connects to SpaceX API to download its rocket fleet.
+FatLine is a virtual stock portfolio application that:
 
-Data always comes from the local persistence (offline-first approach) and updates when necessary.
+- Connects to Yahoo Finance API in a respectful manner with proper rate limiting
+- Allows users to search for stocks and add them to their virtual portfolio
+- Tracks portfolio performance over time
+- Stores all data locally for privacy (offline-first approach)
+- Provides a clean, Material3 design interface
+- Supports light/dark mode theming automatically
+- Is completely free and open-source (GPL licensed)
 
-Clicking on each item navigates user to a browser to read more information on the Web.
-
-Use swipe-down gesture to refresh downloaded data.
-
-Supports light/dark mode theming automatically.
+### **Features**
+- **🔍 Stock Search**: Search and discover stocks from major exchanges
+- **📊 Portfolio Management**: Add stocks to your virtual portfolio and track performance
+- **⚙️ Settings**: Customize app preferences and view about information
 
 
 ### **Libraries/concepts used**
@@ -43,3 +40,36 @@ Supports light/dark mode theming automatically.
 * Jetpack Compose test dependencies, Maestro and Hilt - for UI tests
 * GitHub Actions - for CI/CD
 * KtLint and Detekt - for code linting
+
+
+Build Commands
+Clean and Build:
+```
+gradlew clean build
+```
+Build Debug APK:
+```
+gradlew assembleDebug
+```
+Build Release APK:
+```
+gradlew assembleRelease
+```
+Install Commands
+Install Debug APK to Connected Device:
+```
+gradlew installDebug
+```
+Install Release APK:
+```
+gradlew installRelease
+```
+Install and Run:
+```
+gradlew installDebug && adb shell am start -n com.huntercoles.fatline/.MainActivity
+```
+Debug Commands
+Run Tests:
+```
+gradlew test
+```

@@ -1,5 +1,9 @@
 package com.huntercoles.fatline.basicfeature.presentation
 
-sealed class RocketsEvent {
-    data class OpenWebBrowserWithDetails(val uri: String) : RocketsEvent()
+sealed class StockSearchEvent {
+    data class ShowStockDetails(val symbol: String) : StockSearchEvent()
+    
+    data class ShowMessage(val message: String) : StockSearchEvent()
+    
+    data class AddedToPortfolio(val symbol: String) : StockSearchEvent()
 }

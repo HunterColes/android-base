@@ -15,6 +15,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidStarter"
-        tools:targetApi="34" />
+        tools:targetApi="34">
+        
+        <activity
+            android:name="com.huntercoles.fatline.core.presentation.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AndroidStarter">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    </application>
 
 </manifest>

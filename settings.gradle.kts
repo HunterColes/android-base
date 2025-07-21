@@ -3,6 +3,8 @@
 include(":app")
 include(":baseline-profiles")
 include(":basic-feature")
+include(":portfolio-feature")
+include(":settings-feature")
 include(":core")
 
 pluginManagement {

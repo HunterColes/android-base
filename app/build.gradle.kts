@@ -60,6 +60,8 @@ baselineProfile {
 dependencies {
     implementation(project(":core"))
     implementation(project(":basic-feature"))
+    implementation(project(":portfolio-feature"))
+    implementation(project(":settings-feature"))
 
     implementation(libs.hilt)
     implementation(libs.navigation) // needed for Room
